@@ -22,7 +22,7 @@ describe "Menu", type: :system do
       expect(page).to \
         have_selector("li", count: 3) &
         have_link("Home", href: "/") &
-        have_link("Initiatives", href: "/initiatives") &
+        #have_link("Initiatives", href: "/initiatives") &
         have_link("Help", href: "/pages")
     end
   end
