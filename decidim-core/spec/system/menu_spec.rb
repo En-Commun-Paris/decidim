@@ -21,8 +21,7 @@ describe "Menu", type: :system do
     within ".main-nav" do
       expect(page).to \
         have_selector("li", count: 2) &
-        have_link("Home", href: "/") &
-        #have_link("Initiatives", href: "/initiatives") &
+        have_link("Home", href: "/") &        
         have_link("Help", href: "/pages")
     end
   end
