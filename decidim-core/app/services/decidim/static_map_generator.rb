@@ -31,9 +31,7 @@ module Decidim
         z: @options[:zoom],
         w: @options[:width],
         h: @options[:height],
-        f: "1",
-        app_id: Decidim.geocoder.fetch(:here_app_id),
-        app_code: Decidim.geocoder.fetch(:here_app_code),
+        f: "1",        
         api_key: Decidim.geocoder.fetch(:here_api_key)
       }
 
