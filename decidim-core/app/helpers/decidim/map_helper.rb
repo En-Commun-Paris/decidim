@@ -31,7 +31,8 @@ module Decidim
         id: "map",
         "data-markers-data" => markers_data.to_json,
         "data-here-app-id" => Decidim.geocoder[:here_app_id],
-        "data-here-app-code" => Decidim.geocoder[:here_app_code]
+        "data-here-app-code" => Decidim.geocoder[:here_app_code],
+        "data-here-api-key" => Decidim.geocoder[:here_api_key]
       }
       content = capture { yield }.html_safe
       content_tag :div, class: "row column" do
