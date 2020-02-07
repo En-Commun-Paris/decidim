@@ -26,11 +26,11 @@ L.TileLayer.HERE = L.TileLayer.extend({
 
 		// 🍂option appId: String = ''
 		// Required option. The `app_id` provided as part of the HERE credentials
-		appId: '',
+		
 
 		// 🍂option appCode: String = ''
 		// Required option. The `app_code` provided as part of the HERE credentials
-		appCode: '',
+		apiKey: ''
 	},
 
 
