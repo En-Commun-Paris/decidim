@@ -107,7 +107,7 @@ module Decidim
             # :ip_lookup => :maxmind,
             # to use an API key:
             # api_key: [Decidim.geocoder&.fetch(:here_app_id), Decidim.geocoder&.fetch(:here_app_code)]
-            api_key: [Decidim.geocoder&.fetch(:here_api_key)]
+            api_key: Decidim.geocoder&.fetch(:here_api_key)
             # geocoding service request timeout, in seconds (default 3):
             # :timeout => 5,
             # set default units to kilometers:
